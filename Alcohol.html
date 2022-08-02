@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function leeftijdsCheck() {
+            var leeftijd = document.getElementById("input").value;
+            var elem = document.getElementById("id1");
+            if (leeftijd >= 18) {
+                alert("keihard aan de zuip");
+                elem.style.backgroundColor = "green";
+            } else if (leeftijd < 18 && leeftijd >= 16) {
+                alert("alleen pils voor jou")
+                elem.style.backgroundColor = "orange";
+            } else {
+                alert("Niet keihard zuipen maat");
+                elem.style.backgroundColor = "red";
+            }
+        }
+    </script>
+</head>
+
+<body id="id1">
+    <div>Wat is je leeftijd?<br>
+        <input type="text" id="input"><br>
+        <input type="button" value="submit" onmousedown=leeftijdsCheck()><br>
+    </div>
+</body>
+
+</html>

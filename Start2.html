@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // verbose  boiler plate code   PYTHON
+        function deFunctie() {
+            var invoer = document.getElementById("id1").value;
+            document.getElementById("id2").innerHTML = "Welkom <b>" + invoer + "</b>";
+            // if
+            if (invoer == "abc") {
+                alert("Geen ge-abc hier");
+            } else {
+                alert("Dit mag")
+            }
+            getal = parseInt(invoer);
+            console.log(getal + getal);
+            var elem = document.getElementById("id1")
+            elem.style.backgroundColor = "red";
+        }    
+    </script>
+</head>
+
+<body>
+    <input type="button" value="klik hier" onclick="deFunctie()" />
+    <br>
+    <input type="text" id="id1">
+    <br>
+    <div id="id2">Welkom: </div>
+</body>
+
+</html>

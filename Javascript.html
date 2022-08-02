@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //function, herken je altijd aan de (). Bestaat uit een definitie en een aanroep
+        // strongly typed talen, Java, C# etc. Moet je het type van een variabele aangeven en aangeven DAT en WAT het dan terug geeft
+        // weakly typed
+        function naamFunctie() {
+            var a; // dit is declareren
+            let b; // gelijk aan b
+            const c = 9; // kan niet gewijzigd worden
+            a = 5; // assignen mag oneindig vaak
+            // alert(a * 6);
+            console.log(a);
+            console.log(a <= 14);
+            console.log(a != c);
+            // && and, || or    logische operators
+            console.log("=========");
+            console.log(a == c || a == 234);
+            // ! not
+            console.log(!a == 234);
+            a++; // evalueren en dan incrementeren
+            ++a; // incrementen en dan evalueren.
+            console.log(a);
+            console.log(a++);
+            console.log(++a);
+            console.log(a);
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <input type="button" value="klik hier" onmousedown=naamFunctie() />
+</body>
+
+</html>
