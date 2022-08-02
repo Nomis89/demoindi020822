@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let aantalLetter = 0;
+        function zoekE() {
+            let woord = document.getElementById("woord").value;
+            let letter = document.getElementById("letter").value;
+            let lengte = woord.length;
+            let x;
+            // console.log(length);
+            for (x = 0; x < lengte; x += 1) {
+                if (woord.charAt(x) == letter) {
+                    aantalLetter += 1;
+                    console.log(aantalLetter);
+                    console.log("wel een " + letter + " op positie " + x);
+                } else {
+                    console.log("geen " + letter + " op positie " + x);
+                }
+            }
+            console.log("Er zitten in total " + aantalLetter + " " + letter + "'s in het woord: " + woord)
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="woord"><br>
+    <input type="text" id="letter"><br>
+
+    <input type="button" value="klik dan!" onclick="zoekE()">
+
+</body>
+
+</html>

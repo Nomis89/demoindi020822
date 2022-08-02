@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x;
+        let clicksA = 0;
+        let clicksB = 0;
+        let clicksC = 0;
+        let clicksD = 0;
+
+        let note = "";
+
+        function countClicks(x) {
+
+            if (x == 'A') {
+                clicksA += 1;
+                if (clicksA > 1) {
+                    alert("Dat mag niet");
+                    note = note + "Je hebt op A gedrukt</br>"
+                    document.getElementById("text").innerHTML = note;
+
+                } else {
+                    alert("Er is 1 keer geklikt");
+                    note = note + "Je hebt op A gedrukt</br>"
+                    document.getElementById("text").innerHTML = note;
+                }
+            }
+
+            if (x == 'B') {
+                clicksB += 1;
+                if (clicksB > 1) {
+                    alert("Dat mag niet");
+                    note = note + "Je hebt op C gedrukt</br>"
+                    document.getElementById("text").innerHTML = note;
+                } else {
+                    alert("Er is 1 keer geklikt");
+                    note = note + "Je hebt op B gedrukt</br>"
+                    document.getElementById("text").innerHTML = note;
+                }
+            }
+
+            if (x == 'C') {
+                clicksC += 1;
+                if (clicksC > 1) {
+                    alert("Dat mag niet");
+                    note = "Je hebt op C gedrukt</br>"
+                    document.getElementById("text").innerHTML = note;
+                } else {
+                    alert("Er is 1 keer geklikt");
+                    note = "Je hebt op C gedrukt</br>"
+                    document.getElementById("text").innerHTML = note;
+                }
+            }
+
+            if (x == 'D') {
+                clicksD += 1;
+                if (clicksD > 1) {
+                    alert("Dat mag niet");
+                    note = "Je hebt op D gedrukt</br>"
+                    document.getElementById("text").innerHTML = note;
+                } else {
+                    alert("Er is 1 keer geklikt");
+                    note = "Je hebt op D gedrukt</br>"
+                    document.getElementById("text").innerHTML = note;
+                }
+            }
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="A" onclick="countClicks('A')">
+    <input type="button" value="B" onclick="countClicks('B')">
+    <input type="button" value="C" onclick="countClicks('C')">
+    <input type="button" value="D" onclick="countClicks('D')">
+
+    <div id="text">
+
+    </div>
+
+</body>
+
+</html>
